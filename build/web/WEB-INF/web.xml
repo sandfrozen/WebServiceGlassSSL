@@ -10,7 +10,7 @@
         </session-timeout>
     </session-config>
     
-    <!-- Security constraint for resource only accessible to role -->
+    <!--Security constraint for resource only accessible to role--> 
     <security-constraint>
         <display-name>WebServiceSecurity</display-name>
 
@@ -23,6 +23,9 @@
         <auth-constraint>
             <role-name>user</role-name>
         </auth-constraint>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
 
     </security-constraint>  
 

@@ -1,5 +1,5 @@
 
-package ws.jaxws;
+package ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,10 +7,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name = "multiplyResponse", namespace = "http://ws/")
+@XmlRootElement(name = "sumResponse", namespace = "http://ws/")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "multiplyResponse", namespace = "http://ws/")
-public class MultiplyResponse {
+@XmlType(name = "sumResponse", namespace = "http://ws/")
+public class SumResponse {
 
     @XmlElement(name = "return", namespace = "")
     private int _return;
